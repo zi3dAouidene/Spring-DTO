@@ -1,7 +1,6 @@
 package com.example.springdto.controller;
 
 import com.example.springdto.model.Course;
-import com.example.springdto.repo.CourseRepo;
 import com.example.springdto.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +13,7 @@ public class CourseController {
 
     @Autowired
     private CourseService courseService;
-    @RequestMapping("/all")
+    @RequestMapping("/alls")
     public List<Course> getAllCourses(){
         System.out.println("getAllCourses() invoked !!! ");
         return courseService.getCourses();

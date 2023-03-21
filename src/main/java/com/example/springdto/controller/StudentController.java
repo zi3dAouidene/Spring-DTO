@@ -16,7 +16,7 @@ public class StudentController {
 
     @RequestMapping("/all")
     public List<Student> getAllStudents(){
-        System.out.println("getAllStudents() invoked !!!");
+        System.out.println("getAllStudents() invoked !!!"); //
         return studentService.getStudents();
     }
 }
